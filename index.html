@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <title>Virtual Reality Tour</title>
   <head>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   </head>
@@ -17,36 +18,49 @@
     	</a-assets>
       
 	
-      <a-entity id="camera" position="0 1.6 0" camera look-controls wasd-controls cursor="rayOrigin: mouse">
+      <a-entity id="camera" position="0 1.6 1.5" camera look-controls wasd-controls cursor="rayOrigin: mouse">
       </a-entity>
 
+<!-- Title Panel -->
 
-
+      <a-entity id="homecenter-red" position="0 5 -5" rotation="0 0 0" class="homepage">
+        <a-plane id="holder" color="blue" align="center" scale="7 3 3"></a-plane>
+        <a-text value="Welcome to the Hutt Valley High Virtual Tour" width="5" wrap-count="15" position="-2.861 0.081 0.007"></a-text> 
+      </a-entity>
 
 
       <a-sky id="sky" src="#area1"></a-sky>
 
 			<!-- Navigation Buttons -->
 
-			<a-entity id="teleporthome" position="-2 1.5 -1.5" rotation="0 45 0" teleporthome>
+			<a-entity id="teleporthome" position="-1.6 1 -2" rotation="0 0 0" teleporthome>
 				<a-plane id="holder" color="purple"></a-plane>
 				<a-text value="Click here to go to the Home Page" width="1" wrap-count="10" position="-0.518 0.064 0.005"></a-text>
 			</a-entity>
 
-			<a-entity id="teleport1" position="-2 1.5 -2.5" rotation="0 45 0" teleport>
+			<a-entity id="teleport1" position="-0.5 1 -2" rotation="0 0 0" teleport>
 				<a-plane id="holder" color="red"></a-plane>
 				<a-text value="Click here to go to the 2nd space" width="1" wrap-count="10" position="-0.518 0.064 0.005"></a-text>
 			</a-entity>
 
-			<a-entity id="teleport2" position="-2 1.5 -4.5" rotation="0 45 0" teleport2>
+			<a-entity id="teleport2" position="0.6 1 -2" rotation="0 0 0" teleport2>
 				<a-plane id="holder" color="blue"></a-plane>
 				<a-text value="Click here to go to the 3rd space" width="1" wrap-count="10" position="-0.518 0.064 0.005"></a-text>
 			</a-entity>
 
-			<a-entity id="teleport3" position="-2 1.5 -6.5" rotation="0 45 0" teleport3>
+			<a-entity id="teleport3" position="1.7 1 -2" rotation="0 0 0" teleport3>
 				<a-plane id="holder" color="green"></a-plane>
 				<a-text value="Click here to go to the 4th space" width="1" wrap-count="10" position="-0.518 0.064 0.005"></a-text>
 			</a-entity>
+
+      <!-- The Architecture -->
+
+      <a-entity id="architecture" class="homeworld">
+         <a-plane id="floor" color="teal" rotation="-90 90 0" width="20" height="20" src="" repeat="4 4"></a-plane>
+
+         
+
+
 
     <a-scene>
       <a-assets>
