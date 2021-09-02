@@ -1,13 +1,10 @@
-AFRAME.registerComponent('teleport', {
+AFRAME.registerComponent('teleport1', {
 	init: function () {
-
-		let sky = document.querySelector("#sky");
-		let changeSky = () => {
-
-			sky.setAttribute("src", "#area2");
+		let redirect = () => {
+  		window.location.href = "dtech.html";
 		};
 
-		this.el.addEventListener('click',changeSky);
+		this.el.addEventListener('click', redirect);
 
 	}
-});
+})

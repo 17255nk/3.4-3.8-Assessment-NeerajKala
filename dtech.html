@@ -1,17 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <title>Virtual Reality Tour</title>
+  <title>DTECH Space</title>
   <head>
-
-<!-- Scripts -->
-
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-        <script src="scripts/teleporthome.js"></script>
-		<script src="scripts/teleport1.js"></script>
-    <script src="scripts/teleport2.js"></script>
-    <script src="scripts/teleport3.js"></script>
-
-    
   </head>
   <body>
 
@@ -34,11 +25,11 @@
 
       <a-entity id="homecenter-red" position="0 5 -5" rotation="0 0 0" class="homepage">
         <a-plane id="holder" color="blue" align="center" scale="7 3 3"></a-plane>
-        <a-text value="Welcome to the Hutt Valley High Virtual Tour" width="5" wrap-count="15" position="-2.861 0.081 0.007"></a-text> 
+        <a-text value="Digital Technology" width="5" wrap-count="15" position="-2.861 0.081 0.007"></a-text> 
       </a-entity>
 
 
-      <a-sky id="sky" src="#area1"></a-sky>
+      <a-sky id="sky" src="#area2"></a-sky>
 
 			<!-- Navigation Buttons -->
 
@@ -47,7 +38,7 @@
 				<a-text value="Click here to go to the Home Page" width="1" wrap-count="10" position="-0.518 0.064 0.005"></a-text>
 			</a-entity>
 
-			<a-entity id="teleport1" position="-0.5 1 -2" rotation="0 0 0" teleport1>
+			<a-entity id="teleport1" position="-0.5 1 -2" rotation="0 0 0" teleport>
 				<a-plane id="holder" color="red"></a-plane>
 				<a-text value="Click here to go to the 2nd space" width="1" wrap-count="10" position="-0.518 0.064 0.005"></a-text>
 			</a-entity>
@@ -72,9 +63,7 @@
 
 
     <a-scene>
-      <a-assets>
-<a-box color="blue"></a-box>
-      </a-assets>
+
     </a-scene>
     </body>
     </html>-
