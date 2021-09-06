@@ -1,14 +1,10 @@
 AFRAME.registerComponent('teleport2', {
 	init: function () {
-		let sky = document.querySelector("#sky");
-
-
-		let changeSky = () => {
-
-			sky.setAttribute("src", "#area3");
+		let redirect = () => {
+  		window.location.href = "general.html";
 		};
 
-		this.el.addEventListener('click',changeSky);
+		this.el.addEventListener('click', redirect);
 
 	}
-});
+})

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <title>Virtual Reality Tour</title>
+  <title>HVHS VR Tour</title>
   <head>
 
 <!-- Scripts -->
 
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-        <script src="scripts/teleporthome.js"></script>
+    <script src="scripts/teleporthome.js"></script>
 		<script src="scripts/teleport1.js"></script>
     <script src="scripts/teleport2.js"></script>
     <script src="scripts/teleport3.js"></script>
@@ -20,23 +20,18 @@
 <!-- Assets -->
 
 			<a-assets>
-        <img id="area1" src="assets/images/">
-				<img id="area2" src="assets/images/">
-      <img id="area3" src="assets/images/">
-      <img id="area4" src="assets/images/">  
+      <img id="area1" src="assets/images/placeholder-sky.jpg">
+			<img id="area2" src="assets/images/placeholder-sky.jpg">
+      <img id="area3" src="assets/images/placeholder-sky.jpg">
+      <img id="area4" src="assets/images/placeholder-sky.jpg">  
     	</a-assets>
       
-	
+	<!-- Camera -->
+
       <a-entity id="camera" position="0 1.6 1.5" camera look-controls wasd-controls cursor="rayOrigin: mouse">
       </a-entity>
 
-<!-- Title Panel -->
-
-      <a-entity id="homecenter-red" position="0 5 -5" rotation="0 0 0" class="homepage">
-        <a-plane id="holder" color="blue" align="center" scale="7 3 3"></a-plane>
-        <a-text value="Welcome to the Hutt Valley High Virtual Tour" width="5" wrap-count="15" position="-2.861 0.081 0.007"></a-text> 
-      </a-entity>
-
+<!-- Sky -->
 
       <a-sky id="sky" src="#area1"></a-sky>
 
@@ -64,17 +59,14 @@
 
       <!-- The Architecture -->
 
-      <a-entity id="architecture" class="homeworld">
-         <a-plane id="floor" color="teal" rotation="-90 90 0" width="20" height="20" src="" repeat="4 4"></a-plane>
+      <!-- Title Panel -->
 
+      <a-entity id="homecenter-red" position="0 5 -5" rotation="0 0 0" class="homepage">
+        <a-plane id="holder" color="blue" align="center" scale="7 3 3"></a-plane>
+        <a-text value="Welcome to the Hutt Valley High Virtual Tour" width="5" wrap-count="15" position="-2.861 0.081 0.007"></a-text> 
+      </a-entity>
          
 
 
-
-    <a-scene>
-      <a-assets>
-<a-box color="blue"></a-box>
-      </a-assets>
-    </a-scene>
     </body>
-    </html>-
+    </html>
