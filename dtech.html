@@ -22,7 +22,7 @@
 
 	<a-scene>
 
-<!-- Assets -->
+     <!-- Assets -->
 
 			<a-assets>
       <img id="area1" src="assets/images/placeholder-sky.jpg">
@@ -31,12 +31,12 @@
       <img id="area4" src="assets/images/placeholder-sky.jpg">  
     	</a-assets>
 
-	<!-- Camera -->
+	   <!-- Camera -->
 
       <a-entity id="camera" position="0 1.6 1.5" camera look-controls wasd-controls cursor="rayOrigin: mouse">
       </a-entity>
 
-<!-- Sky -->
+     <!-- Sky -->
 
       <a-sky id="sky" src="#area2"></a-sky>
 
@@ -73,7 +73,17 @@
         <a-text value="Digital Technology" width="5" wrap-count="15" position="-2.861 0.081 0.007"></a-text> 
       </a-entity>
          
-<!-- Info-->
+      <!-- Info-->
+
+      <a-plane id="sidepanelleft" color="#20B2AA" align="center" scale="4.122 5.628 3.764" position="-7.171 2.951 -5.013" rotation=" 0 0 0"></a-plane>
+        <a-text value="PLACEHOLDER TEXT" width="5" wrap-count="20" position="-9.321 2.951 -5.013" rotation=" 0 0 0" ></a-text> 
+      </a-entity>
+
+       <a-plane id="sidepanelright" color="#20B2AA" align="center" scale="4.122 5.628 3.764" position="7.171 2.951 -5.013" rotation=" 0 0 0"></a-plane>
+        <a-text value="PLACEHOLDER TEXT" width="5" wrap-count="20" position="5.071 2.951 -5.013" rotation=" 0 0 0" ></a-text> 
+      </a-entity>
+
+
 
     </body>
     </html>
