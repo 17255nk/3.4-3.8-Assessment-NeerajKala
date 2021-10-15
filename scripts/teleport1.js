@@ -8,4 +8,3 @@ AFRAME.registerComponent('teleport1', {
 
 	}
 })
-)
