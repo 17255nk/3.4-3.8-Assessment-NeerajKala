@@ -23,7 +23,7 @@
 			<img id="area1" src="assets/images/reSchoolHome.jpeg">
 			<img id="area2" src="assets/images/reDtechroom.jpeg">
       <img id="area3" src="assets/images/CanteenDanielandJesse1.jpg">
-      <img id="area4" src="assets/images/b-blockjunction.jpg">  
+      <img id="area4" src="assets/images/Bblockjunction.jpeg">  
     	</a-assets>
       
       
@@ -37,25 +37,23 @@
       <a-sky id="sky" src="#area4" rotation="0 -145 0"></a-sky>
 
 			<!-- Navigation Buttons -->
-
-			<a-entity id="teleporthome" position="-1.6 1 -2" rotation="0 0 0" teleporthome>
-				<a-plane id="button1" color="#6495ED"></a-plane>
-				<a-text value="Click here to go to the Home Page" width="1" wrap-count="10" position="-0.518 0.064 0.005"></a-text>
+   			<a-entity id="teleporthome" position="-1.6 0.212 -2" rotation="0 0 0" teleporthome>
+				<a-plane id="button1" color="#6495ED" src="assets/images/icons/home-icon.png"></a-plane>
 			</a-entity>
 
-			<a-entity id="teleport1" position="-0.5 1 -2" rotation="0 0 0" teleport1>
-				<a-plane id="button2" color="#6495ED"></a-plane>
-				<a-text value="Click here to go to the 2nd space" width="1" wrap-count="10" position="-0.518 0.064 0.005"></a-text>
+			<a-entity id="teleport1" position="-0.5 0.212 -2" rotation="0 0 0" teleport1>
+				<a-plane id="button1" color="#6495ED"  src="assets/images/icons/2-icon.png"></a-plane>
 			</a-entity>
 
-			<a-entity id="teleport2" position="0.6 1 -2" rotation="0 0 0" teleport2>
-				<a-plane id="button3" color="#6495ED"></a-plane>
-				<a-text value="Click here to go to the 3rd space" width="1" wrap-count="10" position="-0.518 0.064 0.005"></a-text>
 			</a-entity>
 
-			<a-entity id="teleport3" position="1.7 1 -2" rotation="0 0 0" teleport3>
-				<a-plane id="button4" color="#6495ED"></a-plane>
-				<a-text value="Click here to go to the 4th space" width="1" wrap-count="10" position="-0.518 0.064 0.005"></a-text>
+			<a-entity id="teleport2" position="0.6 0.212 -2" rotation="0 0 0" teleport2>
+				<a-plane id="button3" color="#6495ED" src="assets/images/icons/3-icon.png"></a-plane>
+        </a-entity>
+		
+
+			<a-entity id="teleport3" position="1.7 0.212 -2" rotation="0 0 0" teleport3>
+				<a-plane id="button4" color="#6495ED" src="assets/images/icons/4-icon.png"></a-plane>
 			</a-entity>
 
 
@@ -68,6 +66,14 @@
         <a-text value="Welcome to B-Block!" width="5" wrap-count="17" position="-2.861 0.081 0.007"></a-text> 
       </a-entity>
          
+         <!-- Info & Images --> 
+   
+      <a-plane id="leftboxpanel" color="#20B2AA" align="center" scale="4.122 5.628 3.764" position="-5.522 1.934 -2.527" rotation=" 0 46.737 0" src="assets/images/panels/b-block-left.png"></a-plane>
+
+      </a-entity>
+
+       <a-plane id="rightboxpanel" color="#20B2AA" align="center" scale="4.122 5.628 3.764" position="5.522 1.934 -2.527" rotation=" 0 -46.737 0" src="assets/images/panels/b-block-right.png"></a-plane>
+      </a-entity>
 
 
     </body>
