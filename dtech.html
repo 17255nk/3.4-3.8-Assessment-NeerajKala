@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <title>DTECH Space</title>
-  <head>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-  </head>
-  <body>
 
-	<a-scene>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
 
 <!-- Scripts -->
 
@@ -17,7 +14,6 @@
     <script src="scripts/teleport3.js"></script>
 
     
-  </head>
   <body>
 
 	<a-scene>
@@ -25,10 +21,10 @@
      <!-- Assets -->
 
 		<a-assets>
-			<img id="area1" src="assets/images/reSchoolHome.jpeg">
-			<img id="area2" src="assets/images/reDtechroom.jpeg">
-      <img id="area3" src="assets/images/CanteenDanielandJesse1.jpg">
-      <img id="area4" src="assets/images/b-blockjunction.jpg">  
+			<img id="area1" alt="area1" src="assets/images/reSchoolHome.jpeg">
+			<img id="area2" alt="area2" src="assets/images/reDtechroom.jpeg">
+      <img id="area3" alt="area3" src="assets/images/dramamusicblock1.jpg">
+      <img id="area4" alt="area4" src="assets/images/b-blockjunction.jpg">  
     	</a-assets>
 
 	   <!-- Camera -->
@@ -47,10 +43,10 @@
 			</a-entity>
 
 			<a-entity id="teleport1" position="-0.5 0.212 -2" rotation="0 0 0" teleport1>
-				<a-plane id="button1" color="#6495ED"  src="assets/images/icons/2-icon.png"></a-plane>
+				<a-plane id="button2" color="#6495ED"  src="assets/images/icons/2-icon.png"></a-plane>
 			</a-entity>
 
-			</a-entity>
+
 
 			<a-entity id="teleport2" position="0.6 0.212 -2" rotation="0 0 0" teleport2>
 				<a-plane id="button3" color="#6495ED" src="assets/images/icons/3-icon.png"></a-plane>
@@ -74,12 +70,11 @@
 
   <a-plane id="sidepanelleft" color="#20B2AA" align="center" scale="4.122 5.628 3.764" position="-5.522 1.934 -2.527" rotation=" 0 46.737 0" src="assets/images/panels/dtech-left.png"></a-plane>
 
-      </a-entity>
 
        <a-plane id="sidepanelright" color="#20B2AA" align="center" scale="4.122 5.628 3.764" position="5.522 1.934 -2.527" rotation=" 0 -46.737 0" src="assets/images/panels/dtech-right.png"></a-plane>
-      </a-entity></a-text> 
-      </a-entity>
 
+  
+</a-scene>
 
 
     </body>
