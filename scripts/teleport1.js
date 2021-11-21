@@ -1,3 +1,4 @@
+//Teleport Code DTECH Space
 AFRAME.registerComponent('teleport1', {
 	init: function () {
 		let redirect = () => {

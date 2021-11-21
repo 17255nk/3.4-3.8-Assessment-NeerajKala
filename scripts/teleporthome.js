@@ -1,3 +1,4 @@
+//Teleport Code Home Page
 AFRAME.registerComponent('teleporthome', {
 	init: function () {
 		let redirect = () => {

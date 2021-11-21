@@ -1,3 +1,4 @@
+//Teleport Code General Space
 AFRAME.registerComponent('teleport2', {
 	init: function () {
 		let redirect = () => {

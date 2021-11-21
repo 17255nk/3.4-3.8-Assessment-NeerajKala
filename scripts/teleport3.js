@@ -1,3 +1,4 @@
+//Teleport Code B Block Space
 AFRAME.registerComponent('teleport3', {
 	init: function () {
 		let redirect = () => {
